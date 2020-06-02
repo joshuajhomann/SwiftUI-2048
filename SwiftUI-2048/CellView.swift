@@ -16,16 +16,10 @@ struct CellView: View {
         Color(self.cell.color)
           .cornerRadius(geometry.size.height * 0.125)
         Text(self.cell.description)
-        .font(.system(size: geometry.size.height * Self.fontScale(for: self.cell.description)))
+          .font(.system(size: geometry.size.height * 0.7))
+        .minimumScaleFactor(0.1)
         .foregroundColor(.white)
       }
-    }
-  }
-  static func fontScale(for string: String) -> CGFloat {
-    switch string.count {
-    case 3: return 0.5
-    case 4: return 0.35
-    default: return 0.7
     }
   }
 }

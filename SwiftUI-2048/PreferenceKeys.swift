@@ -11,7 +11,6 @@ import SwiftUI
 protocol DictionaryPreferenceKey: PreferenceKey where Value == [Key : DictionaryValue] {
   associatedtype Key: Hashable
   associatedtype DictionaryValue
-  static var defaultValue: Value { get }
 }
 
 extension DictionaryPreferenceKey {
@@ -21,20 +20,7 @@ extension DictionaryPreferenceKey {
   }
 }
 
-protocol SinglePreferenceKey: PreferenceKey { }
-
-extension SinglePreferenceKey {
-  static func reduce(value: inout Value, nextValue: () -> Value) {
-     value = nextValue()
-  }
-}
-
 struct CellPreferenceKey: DictionaryPreferenceKey {
   typealias Key = Int
   typealias DictionaryValue = CGRect
 }
-
-struct BoardPreferenceKey: SinglePreferenceKey {
-  static var defaultValue: CGRect = .zero
-}
-

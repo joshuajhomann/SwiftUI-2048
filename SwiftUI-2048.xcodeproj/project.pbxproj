@@ -17,6 +17,7 @@
 		0342EB57247C625D00A9CFA2 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342EB56247C625D00A9CFA2 /* PreferenceKeys.swift */; };
 		0342EB59247CC4C800A9CFA2 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342EB58247CC4C800A9CFA2 /* BoardView.swift */; };
 		0342EB5B247CC4E500A9CFA2 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342EB5A247CC4E500A9CFA2 /* CellView.swift */; };
+		03BCB0082485F26300DADDB4 /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BCB0072485F26300DADDB4 /* SwipeGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		0342EB56247C625D00A9CFA2 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		0342EB58247CC4C800A9CFA2 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		0342EB5A247CC4E500A9CFA2 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		03BCB0072485F26300DADDB4 /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				0342EB58247CC4C800A9CFA2 /* BoardView.swift */,
 				0342EB5A247CC4E500A9CFA2 /* CellView.swift */,
 				0342EB56247C625D00A9CFA2 /* PreferenceKeys.swift */,
+				03BCB0072485F26300DADDB4 /* SwipeGesture.swift */,
 				0305989B24790033008BCA8E /* Assets.xcassets */,
 				030598A024790033008BCA8E /* LaunchScreen.storyboard */,
 				030598A324790033008BCA8E /* Info.plist */,
@@ -164,6 +167,7 @@
 				030598AA2479005D008BCA8E /* GameModel.swift in Sources */,
 				0342EB57247C625D00A9CFA2 /* PreferenceKeys.swift in Sources */,
 				0342EB59247CC4C800A9CFA2 /* BoardView.swift in Sources */,
+				03BCB0082485F26300DADDB4 /* SwipeGesture.swift in Sources */,
 				0305989824790032008BCA8E /* SceneDelegate.swift in Sources */,
 				0305989A24790032008BCA8E /* GameView.swift in Sources */,
 				0342EB5B247CC4E500A9CFA2 /* CellView.swift in Sources */,

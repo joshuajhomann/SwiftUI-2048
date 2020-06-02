@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct BoardView: View {
-  @EnvironmentObject var model: GameModel
   var body: some View {
     VStack {
       ForEach (0..<GameModel.Constant.dimension) { y in
@@ -20,7 +19,7 @@ struct BoardView: View {
               .cornerRadius(geometry.size.height * 0.125)
               .preference(
                 key: CellPreferenceKey.self,
-                value: [self.model.index(x: x, y: y): geometry.frame(in: CoordinateSpace.named(GameView.Space.board))]
+                value: [GameModel.index(x: x, y: y): geometry.frame(in: CoordinateSpace.named(GameView.Space.board))]
               )
             }
           }
